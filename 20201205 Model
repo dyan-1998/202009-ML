@@ -6,6 +6,13 @@
 
 
 ⭐ Data Block Division:
+Timing： After Preprocess, we need to divide data into some blocks to train the model.
+How:
+- D'_train 
+- - D_pre-trained: to get the model parameter initialization, speed up training
+- - D_train: Train the model
+- - D_validation: Cross-Validation, 防止模型过于复杂而引起的over fitting. 也称循环估计，是将样本数据切割成较小子集的实用方法。一般选 4/5， 8/9
+- D_test: Test the accuracy of the model.
 
 
 
