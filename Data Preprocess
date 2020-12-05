@@ -1,0 +1,43 @@
+1 Feature Scaling 
+
+[def]
+是对实验数据进行预处理的一个步骤，
+数据 => 连续型，离散型 => 连续型数据在离散化处理之后，也可以使用离散数据的处理方法
+
+[Update] 
+离散化有哪些方法？
+- 分桶
+- 分箱
+- 离散数据处理方法：One-hot Coding
+将特征取值扩展到欧氏空间, 离散特诊的某个取值对应欧氏空间的某个点。
+Reasoning: One-hot coding会让特征值之间的距离更加合理。
+*link: https://blog.csdn.net/pipisorry/article/details/61193868
+
+
+[what] 
+变量有哪些处理方法？
+* Link: https://blog.csdn.net/pipisorry/article/details/52247379 
+1\ Normalization,
+- How 
+  本质上是一种Rescaling, 去除数据的单位限制，转化为无量纲的常数，
+  [Why]便于不同单位不同量级的指标能够进行加权和比较。
+  [type] 直线型(极值法，标准差法)，折线型（三折线法），曲线型（半正态型分布）。
+  [e.g.] 归一化是Normalization的一种,映射到[0,1]区间上。
+         [Why] 提升模型的收敛速度（椭圆变成圆形），提升模型的精度
+         [Model] [√]
+                 会影响SVM Solution的等价情况，但是不会影响Regression。
+                 会有利于 LR, SVM, NN, SGD, PCA降维等模型的优化操作。
+                 [X]
+                 Binary进行归一化会破坏稀疏性，
+                 DT（Decision Tree）不受归一化模型的影响。
+         [type] max-min normalization /Rescaling: x' = (x - x_min)/(x_max - x_min)
+                Mean normalization: x' = (x - x_mean)/( x_max - x_min) - 为前者的近似，新数据进入，min-max会改变
+                z-score normalization: (Zero mean) /standardization: x' = (x - x_mean)/ x_std
+                scaling to unit length: x' = x/|x|
+                -
+                log transformation
+                atan func transformation
+                sigmod/Softmax tranformation
+
+
+
