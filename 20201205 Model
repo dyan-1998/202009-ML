@@ -1,6 +1,27 @@
+⭐ DT preprocess:
+1 - 不同数据类型的整合处理, txt, Nominal, value,
+2 - missing value
+3 - unbalanced data, z针对主要特征or分类问题的结果，进行data points pick
 
-⭐ Pretraing & Finetuning
+
+
+⭐ Data Block Division:
+
+
+
+⭐ Model Selection：
+
+
+
+
+⭐ Model Operation：
+
+1 - Pretraing & Finetuning
 *links: https://www.jianshu.com/p/330ee6e7ceda
 
 Occasion: in DL CNN, 很少自己从头训练一个数据集，一般都是在一个大型数据集(e.g.ImageNet)上训练一个模型, 然后使用该模型作为类似任务的初始化
 defination: 此时你使用的就是*pretrained-model, 而用自己的数据集作用于这个Model的过程就叫*fine-tuning
+
+
+
+⭐ Model Evaluation：
