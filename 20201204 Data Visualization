@@ -7,12 +7,39 @@ link: /py-matplotlib https://wizardforcel.gitbooks.io/matplotlib-intro-tut/conte
 
 
 
-[Python绘图包]
+⭐[Python Visualization Tool Kits]
 *link:
-[√] https://www.jianshu.com/p/62027a72a794
-https://juejin.cn/post/6844903832825102350
+√ Whole/ https://www.jianshu.com/p/62027a72a794
+√ Matplotlib/ https://juejin.cn/post/6844903832825102350
 
-*Aim：找到合适的库，
-- Matplotlib
-- 
+Aim：找到合适的库，
+- Matplotlib, 
+  [√]绘图风格比较简约
+  [×]代码量较大，绘图速度慢，交互性不强
+- - Seaborn 封装了很多统计函数, 相对美观
+- - pandas.tools.plotting 对dataframe直接进行绘图
+- - ggplot + R language, 借助了/图形语法的概念
+- - 数据的空间分布：Basemap, Cartopy, geopandas
+- Based on JS,
+  [√]交互可视化
+  - Bokeh & Holoviews
+  - plotly
+  - Cufflins
+  - GeoViews 可视化地理数据，可与HoloViews对象混合和匹配
+  - Folium 绘制空间数据神库
+  - Altair 统计可视化, 围绕pandas dataframe构建
+  
+
+
+⭐[可视化图的基本要素与选择]
+- 3 basic elements
+  - label, title, legend
+  
+- When to use which ?
+  - bar, hist -> Show the distribution
+  - scatter -> discrete points
+  - stackplot -> 比较像层积岩
+  - pie -> Percentage
+  
+  
 
