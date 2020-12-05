@@ -1,4 +1,5 @@
 1 Feature Scaling 
+*link: https://www.zhihu.com/question/20467170
 
 [def]
 是对实验数据进行预处理的一个步骤，
@@ -12,7 +13,6 @@
 将特征取值扩展到欧氏空间, 离散特诊的某个取值对应欧氏空间的某个点。
 Reasoning: One-hot coding会让特征值之间的距离更加合理。
 *link: https://blog.csdn.net/pipisorry/article/details/61193868
-
 
 [what] 
 变量有哪些处理方法？
