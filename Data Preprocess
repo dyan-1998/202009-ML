@@ -9,7 +9,8 @@
 离散化有哪些方法？
 - 分桶
 - 分箱
-- 离散数据处理方法：One-hot Coding
+- 离散数据处理方法：One-hot Coding 
+处理类别型数据的离散值问题。
 将特征取值扩展到欧氏空间, 离散特诊的某个取值对应欧氏空间的某个点。
 Reasoning: One-hot coding会让特征值之间的距离更加合理。
 *link: https://blog.csdn.net/pipisorry/article/details/61193868
@@ -29,7 +30,7 @@ Reasoning: One-hot coding会让特征值之间的距离更加合理。
                  会有利于 LR, SVM, NN, SGD, PCA降维等模型的优化操作。
                  [X]
                  Binary进行归一化会破坏稀疏性，
-                 DT（Decision Tree）不受归一化模型的影响。
+                 Tree model 无需进行归一化,e.g. Decision Tree/ Rando Forest/ Boosting/ bagging。
          [type] max-min normalization /Rescaling: x' = (x - x_min)/(x_max - x_min)
                 Mean normalization: x' = (x - x_mean)/( x_max - x_min) - 为前者的近似，新数据进入，min-max会改变
                 z-score normalization: (Zero mean) /standardization: x' = (x - x_mean)/ x_std
