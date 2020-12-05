@@ -1,0 +1,18 @@
+Start date: 2020/1204
+Version: Python3
+KEYWORD：Package, Good language Design, tips
+
+
+
+[Package]
+- numpy: nparray, do some matrix calculation
+
+- pandas: pddf, Convinient dataframe Operation
+- - Core Oper: https://www.jiqizhixin.com/articles/082602
+- - func: 列元素进行运算 .count() .min() .sum() .min()
+
+
+
+[Transfer]
+df -> array: ary = df.values
+array -> df: df = pd.DataFrame(ary)
