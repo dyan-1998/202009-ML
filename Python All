@@ -7,7 +7,7 @@ KEYWORD：Package, Good language Design, tips
 ⭐[Package]
 *link: https://cloud.tencent.com/developer/article/1029070
 
-- numpy: nparray, do some matrix calculation
+- numpy: nparray科学计算, do some matrix calculation
 
 - pandas: pddf, Convinient dataframe Operation
 - - Core Oper: https://www.jiqizhixin.com/articles/082602
@@ -20,6 +20,9 @@ KEYWORD：Package, Good language Design, tips
 - Tensorflow：DL
 
 - Pytorch：DL, NLP
+
+- NLTK：NLP
+
 
 
 
