@@ -1,7 +1,9 @@
 ⭐ DT preprocess:
 1 - 不同数据类型的整合处理, txt, Nominal, value,
 2 - missing value
-3 - unbalanced data, z针对主要特征or分类问题的结果，进行data points pick
+3 - unbalanced data, 针对主要特征or分类问题的结果，进行data points pick
+
+
 
 
 
@@ -16,7 +18,41 @@ How:
 
 
 
+
+
 ⭐ Model Selection：
+
+*links:
+https://www.zhihu.com/question/24169940
+西瓜书/周志华
+
+Outcomes: Classification(PR), Regression(ML), Action(RL)
+          in Classification, it contains superivised Learning(SL), Semi-Supervised learning(SSL), Un-supervised learning(USL)
+          SL Problems can classify directly,
+          SSL Problems need to process labeled dt and unlabeled ones separately.
+          USL Problems need to use come clustering algorithms.
+
+
+1 - Some Fundemantal ones,
+
+- Basic Ways
+
+- - Probabilistic Classifier
+Naive Bayes(NB) usually used as baseline, is a statistically model.
+Logistics Regression(LR),
+
+- - Non-Proba Classifier
+K-Nearest Neighbor(KNN), mojority votes
+Support Vector Machine(SVM), Kernel choose,
+Decision Tree, 
+Neural Networks, 对非线性可分数据的分类方法, input/hidden/output layers
+
+
+- 集成方法
+Boosting Tree, AdaBoost: 对弱分类器进行组合，达到一个强大的分类器
+Bagging Tree, Random Forest: 从整体当中抽取样本，根据样本数据建立决策树
+
+
 
 
 
@@ -31,4 +67,48 @@ defination: 此时你使用的就是*pretrained-model, 而用自己的数据集�
 
 
 
+
+
 ⭐ Model Evaluation：
+*links:
+model evaluation coeffi/, https://zhuanlan.zhihu.com/p/43405406
+model evaluation coeffi/, https://zhuanlan.zhihu.com/p/74493056
+K-coefficient/ https://zhuanlan.zhihu.com/p/67844308
+
+1 - Precision & Recall
+Occasion：bi-classification 
+keyword：(Real)True/False  (Predicted)Positive/Negative
+Formula: 
+         TP, FP,
+         TN, FN  - 对该二元矩阵Generalization就是Confusion Matrix(混淆矩阵)-N元分类器的预测结果
+         Precision = TP/(TP+FP), 相对自己的Model而言，confidence score.
+         Recall = TP/(TP+FN), 相对真实情况而言，预测正例 e.g.地震发Alert
+         Precison <-> Recall
+         F1 Score: 2/F1 = 1/P + 1/R, F_R可泛化为P,R的加权调和
+         TPR = TP/(TP+FN)
+         FPR = FP/(FP+TN)
+         ROC Curve = FPR(1-Specificity) vs TPR(Sensitivity)
+         AUC Curve = area under ROC
+
+2 - Accuracy & Error Rate
+Occasion: Any classification problems,
+Formula:
+         Accuracy = Sum_T/(Sum_T + Sum_F) = Sum_Indicator/N
+         Errorate = 1 - Accuracy
+
+3 - Kappa Coefficient
+Occasion：用于一致性检验(N分类问题)
+Formula：K coeff = (p_0 - p_e) /(1 - p_e)
+         p_0 = sum_对角元/ sum_all elements in confusion Matrix,  p_0 means Acc.
+         p_e = sum( sum_column_i * sum_row_i ) / (sum_all elements)^2
+Meaning: 加入了对模型Bias的Penalty, 
+         越不平衡的Confusion Matrix, p_e越高, k-coeff越低,
+         所以会给偏向性强的模型打低分。
+
+4 - RMSE(Root Mean Square Error)
+Occasion: Regression
+
+
+
+
+
