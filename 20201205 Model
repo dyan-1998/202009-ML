@@ -30,7 +30,7 @@ Outcomes: Classification(PR), Regression(ML), Action(RL)
           in Classification, it contains superivised Learning(SL), Semi-Supervised learning(SSL), Un-supervised learning(USL)
           SL Problems can classify directly,
           SSL Problems need to process labeled dt and unlabeled ones separately.
-          USL Problems need to use come clustering algorithms.
+          USL Problems need to use come clustering algorithms, e.g. K-means,
 
 
 1 - Some Fundemantal ones,
@@ -44,8 +44,8 @@ Decision Tree,
 Neural Networks, 对非线性可分数据的分类方法, input/hidden/output layers
 
 - 集成方法
-Boosting Tree, AdaBoost: 对弱分类器进行组合，达到一个强大的分类器
 Bagging Tree, Random Forest: 从整体当中抽取样本，根据样本数据建立决策树
+Boosting Tree, AdaBoost: 对弱分类器进行组合，达到一个强大的分类器
 XGBoost, 把若干若模型通过决策树(DT)的方式聚合(Ensemble)到一起，形成一个最终的模型；这个过程会不断地被迭代优化。
          *link, AWS XGBoost/ https://aws.amazon.com/cn/blogs/china/use-xgboost-in-amazon-sagemaker-for-commercial-empowerment/
          
