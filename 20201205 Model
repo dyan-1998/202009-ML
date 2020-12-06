@@ -36,17 +36,12 @@ Outcomes: Classification(PR), Regression(ML), Action(RL)
 1 - Some Fundemantal ones,
 
 - Basic Ways
-
-- - Probabilistic Classifier
 Naive Bayes(NB) usually used as baseline, is a statistically model.
 Logistics Regression(LR),
-
-- - Non-Proba Classifier
 K-Nearest Neighbor(KNN), mojority votes
 Support Vector Machine(SVM), Kernel choose,
 Decision Tree, 
 Neural Networks, 对非线性可分数据的分类方法, input/hidden/output layers
-
 
 - 集成方法
 Boosting Tree, AdaBoost: 对弱分类器进行组合，达到一个强大的分类器
