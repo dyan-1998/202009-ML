@@ -10,7 +10,7 @@ KEYWORD：Package, Good language Design, tips
 - numpy: nparray科学计算, do some matrix calculation
 
 - pandas: pddf, Convinient dataframe Operation
-- - Core Oper: https://www.jiqizhixin.com/articles/082602
+- - Core Oper: 排序等操作, https://www.jiqizhixin.com/articles/082602
 - - func: 列元素进行运算 .count() .min() .sum() .min()
 
 - Matplotlib: Visualization Package
@@ -41,3 +41,12 @@ scatter：https://blog.csdn.net/leeafay/article/details/80299252
 😊[Error once]
 20210104: 避免元素覆盖, 给新的变量空间
 20210111：Code efficiency, 
+
+
+
+
+
+
+
+
+
