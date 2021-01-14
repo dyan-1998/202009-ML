@@ -38,3 +38,6 @@ Color: https://matplotlib.org/3.3.3/users/dflt_style_changes.html
 scatter：https://blog.csdn.net/leeafay/article/details/80299252
 
 
+😊[Error once]
+20210104: 避免元素覆盖, 给新的变量空间
+20210111：Code efficiency, 
